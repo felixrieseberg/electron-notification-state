@@ -1,0 +1,44 @@
+{
+  "name": "electron-notification-state",
+  "version": "1.0.0",
+  "description": "Should you send a notification?",
+  "main": "index.js",
+  "typings": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixrieseberg/electron-notification-state.git"
+  },
+  "author": {
+    "email": "felix@felixrieseberg.com",
+    "name": "Felix Rieseberg",
+    "url": "http://www.felixrieseberg.com"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "prepublish": "npm run build"
+  },
+  "license": "MIT",
+  "keywords": [
+    "macos",
+    "darwin",
+    "CGSSessionScreenIsLocked",
+    "kCGSSessionOnConsoleKey",
+    "doNotDisturb",
+    "do not disturb",
+    "windows",
+    "SHQueryUserNotificationState",
+    "notifications"
+  ],
+  "bugs": {
+    "url": "https://github.com/felixrieseberg/electron-notification-state/issues"
+  },
+  "homepage": "https://github.com/felixrieseberg/electron-notification-state#readme",
+  "dependencies": {
+    "macos-notification-state": "^1.1.0",
+    "windows-notification-state": "^1.3.0",
+    "windows-quiet-hours": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.10"
+  }
+}
