@@ -1,4 +1,3 @@
-import { } from '@types/node';
 import { getNotificationState as getWindowsNotificationState, QUERY_USER_NOTIFICATION_STATE } from 'windows-notification-state';
 import { getIsQuietHours } from 'windows-quiet-hours';
 import { getSessionState as getDarwinSessionState, getDoNotDisturb as getDarwinDoNotDisturb, SessionState } from 'macos-notification-state';
