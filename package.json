@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "npx tsc -p .",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "license": "MIT",
   "keywords": [
