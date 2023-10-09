@@ -1,6 +1,6 @@
 {
   "name": "electron-notification-state",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Should you send a notification?",
   "main": "index.js",
   "typings": "./lib/index",
@@ -14,8 +14,8 @@
     "url": "http://www.felixrieseberg.com"
   },
   "scripts": {
-    "build": "tsc -p .",
-    "prepublish": "npm run build"
+    "build": "npx tsc -p .",
+    "prepare": "npm run build"
   },
   "license": "MIT",
   "keywords": [
@@ -34,11 +34,12 @@
   },
   "homepage": "https://github.com/felixrieseberg/electron-notification-state#readme",
   "dependencies": {
-    "macos-notification-state": "^1.1.0",
-    "windows-notification-state": "^1.3.0",
-    "windows-quiet-hours": "^1.2.2"
+    "macos-notification-state": "^2.0.2",
+    "windows-notification-state": "^2.0.0",
+    "windows-quiet-hours": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^7.0.10"
+    "@types/node": "^18.11.17",
+    "typescript": "^4.9.4"
   }
 }
